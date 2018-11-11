@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 22%;
+    padding: 5px;
+    /* width : 100%; */
+} 
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* ToolTip Styling */
+.column {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.column .tooltiptext {
+    visibility: hidden;
+    width: 20%px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.column :hover .tooltiptext {
+    visibility: visible;
+}
+
+.quiz {
+    display : inline-block;
+    margin: 5%;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 2px #ccc;
+    width : 90%;
+    padding : 2% 2% 2% 2%;
+}
