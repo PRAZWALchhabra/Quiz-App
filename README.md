@@ -59,13 +59,13 @@ The goal is to build a fully functional web application using [Go](https://golan
 ```bash
               create-react-app name_of_app
 ```
+(used create-react-app Directory Structure)
 - You can run the app by running `yarn start`
 - `node_modules` contains all your external packages.
 - `package.json` is a json file that contains all the environment requirements of your project. It is similar to the `requirements.txt` file we saw for python.
 - `public` stores some static content. The `index.html` file is going to render whatever code you write. You will need to change that based on your application's design.
 - ```bash yarn build ``` builds your code into a production ready application. The contents are stored in the `build` directory.
-- `src` contains all of your code. This should follow a good directory structure. Read more into it over [here](https://daveceddia.com/react-project-structure/).
-- Alternate structure to follow can be found [here](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1)
+- `src` contains all of the code.
 
 
 
